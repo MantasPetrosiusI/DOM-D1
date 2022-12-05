@@ -4,6 +4,9 @@ img{
     height: 250px;
 }
 
-div.topFive{
-    visibility: hidden;
+.body-new{
+    background-color: teal;
+}
+.amazon{
+    font-size: 20px;
 }
