@@ -37,9 +37,14 @@ function addClass(){
 EX11: Write a function to toggle a CSS class for all the images in the table; that class should set the visibility of the image
 */
 function changeVis() {
-    let h1Node = document.querySelector('topFive');
-    h1Node.classList.toggle();
+    let h1Node = document.getElementsByTagName('img');
+    for(let i = 0; i<h1Node.length; i++)
+    {
+    h1Node[i].classList.toggle('vis');
+    console.log(h1Node[i])
+    }
 }
 /*
 EX12: Write a function to color the price of the products in a different way every time it’s invoked
 */
+function 
