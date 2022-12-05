@@ -27,20 +27,19 @@ function changeFooter(){
 EX10: Write a function to add a CSS class to every Amazon link
 */
 function addClass(){
-    let amaLink = document.getElementsByTagName('a')[0];
-    amaLink.classList.add('amazon');
+    let amaLink = document.getElementsByTagName('a');
+    for(let i = 0; i < amaLink.length; i++){
+        amaLink[i].classList.add('amazon');
+    }
+    
 }
 /*
 EX11: Write a function to toggle a CSS class for all the images in the table; that class should set the visibility of the image
+*/
 function changeVis() {
-    let h1Node = document.querySelector('div.topFive');
-    h1Node.classList.toggle('topFive');
-
-    if (h1Node.style.visibility === "hidden") {
-        h1Node.style.visibility = "visible";
-      } else {
-        h1Node.style.visibility = "hidden";
-    }
+    let h1Node = document.querySelector('topFive');
+    h1Node.classList.toggle();
 }
+/*
 EX12: Write a function to color the price of the products in a different way every time it’s invoked
 */
