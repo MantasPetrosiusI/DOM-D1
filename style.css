@@ -11,6 +11,6 @@ img{
     font-size: 20px;
     color: orange;
 }
-div.topFive{
+.vis{
     visibility: hidden;
 }
